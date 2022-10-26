@@ -1,0 +1,50 @@
+{
+  "version": 4,
+  "lambda": {
+    "type": "stream",
+    "handler": "lambda_function.lambda_handler",
+    "env": [
+      "LOG_LEVEL=DEBUG"
+    ],
+    "port": 9001
+  },
+  "infra": {
+    "stopContainers": false,
+    "restartContainers": false,
+    "redis": {
+      "image": "redis:latest",
+      "port": 6380
+    },
+    "mongo": {
+      "url": "mongodb://localhost:27017"
+    },
+    "apiLite": {
+      "image": "corva/corva-api-lite:latest",
+      "mode": "data",
+      "port": 3008
+    }
+  },
+  "source": {
+    "import": true,
+    "dir": "./test-sources",
+    "database": "corva",
+    "collection": "corva#wits",
+    "limits": {}
+  },
+  "event": {
+    "assetId": 123456,
+    "companyId": 1,
+    "sourceType": "drilling",
+    "appKey": "corva.witsml-source",
+    "options": {}
+  },
+  "export": {
+    "enabled": true,
+    "format": "json",
+    "collections": [
+      "corva#wits"
+    ],
+    "fields": {}
+  },
+  "debugOutput": "console"
+}
