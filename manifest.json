@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "license": {
+    "type": "MIT",
+    "url": "https://www.oandgexample.com/license/"
+  },
+  "developer": {
+    "authors": []
+  },
+  "application": {
+    "type": "stream",
+    "key": "big-data-energy.ltf_example",
+    "visibility": "private",
+    "name": "ltf_example",
+    "category": "analytics",
+    "segments": [
+      "drilling"
+    ]
+  },
+  "settings": {
+    "entrypoint": {
+      "file": "lambda_function",
+      "function": "lambda_handler"
+    },
+    "timeout": 120,
+    "memory": 128,
+    "environment": {},
+    "runtime": "python3.8"
+  },
+  "datasets": {
+    "big-data-energy.test-y3.0": {
+      "permissions": [
+        "read",
+        "write"
+      ]
+    },
+    "big-data-energy.comments": {
+      "permissions": [
+        "read"
+      ]
+    },
+    "corva.data.drillstring": {
+      "permissions": [
+        "read"
+      ]
+    }
+  }
+}
