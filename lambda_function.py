@@ -3,10 +3,13 @@ from corva import Api, Cache, Logger, StreamTimeEvent, stream
 @stream
 def lambda_handler(event: StreamTimeEvent, api: Api, cache: Cache):
     """ Test app """
-    Logger.debug(f'{event=}')
+    Logger.info(f'{event=}')
+    asset_id = event.asset_id
+    company_id = event.company_id
     records = event.records     # fetch all records from the event
 
-    Logger.debug(f'Start')
+    print(records)
+    Logger.info(f'Start')
 
     data = records[0].data      # get the data from the first record
     hook_load = data['hook_load']   # get hook_load from data
@@ -15,14 +18,14 @@ def lambda_handler(event: StreamTimeEvent, api: Api, cache: Cache):
 
     # compose data for our collection
     body = {
-        "asset_id": event.asset_id,
+        "asset_id": asset_id,
         "version": 1,
         "timestamp": records[0].timestamp,
-        "company_id": event.company_id,
+        "company_id": company_id,
         "data": {
             "hook_load_plus_wob": hook_load_plus_wob
         }
     }
-    Logger.debug(f'{body=}')
+    Logger.info(f'{body=}')
     api.post('/api/v1/data/big-data-energy/hook_load_plus_wob/', data=[body]).raise_for_status()
-    Logger.debug('Done!')
+    Logger.info('Done!')

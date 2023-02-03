@@ -16,7 +16,8 @@
       "port": 6380
     },
     "mongo": {
-      "url": "mongodb://localhost:27017"
+      "image": "mongo:latest",
+      "port": 27018
     },
     "apiLite": {
       "image": "corva/corva-api-lite:latest",
@@ -42,9 +43,9 @@
     "enabled": true,
     "format": "json",
     "collections": [
-      "corva#wits"
+      "big-data-energy#hook_load_plus_wob"
     ],
     "fields": {}
   },
-  "debugOutput": "console"
+  "debugOutput": "file"
 }

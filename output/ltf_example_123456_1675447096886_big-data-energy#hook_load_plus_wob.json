@@ -1,0 +1,127 @@
+[{
+	"_id": {
+		"$oid": "63dd3264c0d5ce54926047d9"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+},
+{
+	"_id": {
+		"$oid": "63dd32bac0d5ce54926047da"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+},
+{
+	"_id": {
+		"$oid": "63dd346dc0d5ce54926047db"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+},
+{
+	"_id": {
+		"$oid": "63dd34afc0d5ce54926047dc"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+},
+{
+	"_id": {
+		"$oid": "63dd356cc0d5ce54926047dd"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+},
+{
+	"_id": {
+		"$oid": "63dd46c7c0d5ce54926047de"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+},
+{
+	"_id": {
+		"$oid": "63dd4738c0d5ce54926047df"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+},
+{
+	"_id": {
+		"$oid": "63dd4797c0d5ce54926047e0"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+},
+{
+	"_id": {
+		"$oid": "63dd4b3fc0d5ce54926047e1"
+	},
+	"asset_id": 123456,
+	"version": 1,
+	"timestamp": 1625874420,
+	"company_id": 1,
+	"data": {
+		"hook_load_plus_wob": 2
+	},
+	"collection": "hook_load_plus_wob",
+	"provider": "big-data-energy"
+}]
+

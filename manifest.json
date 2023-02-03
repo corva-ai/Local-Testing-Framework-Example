@@ -28,20 +28,10 @@
     "runtime": "python3.8"
   },
   "datasets": {
-    "big-data-energy.test-y3.0": {
+    "big-data-energy.hook_load_plus_wob": {
       "permissions": [
         "read",
         "write"
-      ]
-    },
-    "big-data-energy.comments": {
-      "permissions": [
-        "read"
-      ]
-    },
-    "corva.data.drillstring": {
-      "permissions": [
-        "read"
       ]
     }
   }
